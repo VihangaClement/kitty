@@ -1,0 +1,379 @@
+/* Styles the page with a modern, elegant look using purple, lavender, and violet tones. */
+
+/* Global reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, sans-serif; /* Sleek font */
+  min-height: 100vh;
+  background-color: #121212; /* Default dark background */
+  color: #ffffff; /* Default text color */
+  line-height: 1.6;
+  padding: 40px 20px; /* Added padding for better spacing */
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth mode transition */
+  display: flex; /* Keep flex for centering */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align content at the top */
+}
+
+/* Main wrapper */
+.welcome-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  flex: 1; /* Allow wrapper to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out content and footer */
+}
+
+nav a {
+  color: #d1c4e9;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #7c4dff;
+}
+
+/* Header section */
+.header {
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 40px; /* Matches screenshot */
+  margin-bottom: 10px;
+  color: #ffca28; /* Yellow cat emoji for contrast */
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #b388ff; /* Darker lavender */
+  margin-bottom: 10px;
+}
+
+/* Get Started section */
+.get-started {
+  background-color: #1e1e1e; /* Darker panel */
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #7c4dff; /* Vibrant violet outline */
+  margin-bottom: 20px;
+  width: 100%; /* Matches card width */
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4); /* Violet shadow on hover */
+}
+
+.rocket-icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.get-started p {
+  font-size: 16px;
+  color: #d1c4e9; /* Light lavender */
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #7c4dff; /* Vibrant violet button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #651fff; /* Darker violet on hover */
+  transform: translateY(-2px);
+}
+
+/* Mode toggle section */
+.mode-toggle {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+#modeToggleButton {
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2c2c2c; /* Dark button background */
+  color: #ffffff;
+  border: 1px solid #7c4dff; /* Violet border */
+  border-radius: 20px; /* Rounded pill shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: 35%;
+}
+
+#modeToggleButton:hover {
+  background-color: #3c3c3c; /* Slightly lighter on hover */
+}
+
+.icon {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.text {
+  font-weight: 500;
+}
+
+/* Cards section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #1e1e1e; /* Darker card background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px; /* Fixed width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(124, 77, 255, 0.4); /* Violet shadow on hover */
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #b39ddb; /* Darker lavender text */
+}
+
+/* Tip styling */
+.tip {
+  font-size: 14px;
+  color: #d1c4e9; /* Light lavender */
+}
+
+/* Code styling */
+code {
+  background-color: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #ede7f6; /* Pale lavender */
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #f5f5f5; /* Light gray background */
+  color: #1a1a1a; /* Dark text */
+}
+
+body.light .get-started,
+body.light .card {
+  background-color: #ffffff; /* White panels */
+}
+
+body.light .get-started {
+  border-color: #ab47bc; /* Lighter violet */
+}
+
+body.light .card:hover {
+  box-shadow: 0 5px 15px rgba(171, 71, 188, 0.4); /* Lighter violet shadow */
+}
+
+body.light button {
+  background-color: #ab47bc; /* Lighter violet button */
+}
+
+body.light button:hover {
+  background-color: #8e24aa; /* Darker violet on hover */
+}
+
+body.light #modeToggleButton {
+  background-color: #e0e0e0; /* Light button background */
+  color: #1a1a1a;
+  border-color: #ab47bc;
+}
+
+body.light #modeToggleButton:hover {
+  background-color: #d5d5d5; /* Slightly darker on hover */
+}
+
+body.light .tip,
+body.light .card p,
+body.light .get-started p {
+  color: #5e35b1; /* Darker purple text */
+}
+
+body.light code {
+  background-color: #e0e0e0;
+  color: #6a1b9a; /* Darker violet code */
+}
+
+body.light h1 {
+  color: #6a1b9a; /* Darker purple heading */
+}
+/* Content area for about and contact pages */
+.content {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #7c4dff;
+  margin-bottom: 20px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.content a {
+  color: #7c4dff;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
+
+body.light .get-started,
+body.light .card,
+body.light .content {
+  background-color: #ffffff;
+}
+
+body.light .get-started,
+body.light .content {
+  border-color: #ab47bc;
+}
+
+body.light .card:hover,
+body.light .get-started:hover,
+body.light .content:hover {
+  box-shadow: 0 5px 15px rgba(171, 71, 188, 0.4);
+}
+
+body.light button {
+  background-color: #ab47bc;
+}
+
+body.light button:hover {
+  background-color: #8e24aa;
+}
+
+body.light #modeToggleButton {
+  background-color: #e0e0e0;
+  color: #1a1a1a;
+  border-color: #ab47bc;
+}
+
+body.light #modeToggleButton:hover {
+  background-color: #d5d5d5;
+}
+
+body.light .tip,
+body.light .card p,
+body.light .get-started p,
+body.light .content p {
+  color: #5e35b1;
+}
+
+body.light code {
+  background-color: #e0e0e0;
+  color: #6a1b9a;
+}
+
+body.light h1 {
+  color: #6a1b9a;
+}
+
+body.light nav a {
+  color: #5e35b1;
+}
+
+body.light nav a:hover {
+  color: #ab47bc;
+}
+
+/* Footer section */
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #7c4dff; /* Violet border */
+  width: 100%; /* Span full width of the container */
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #d1c4e9;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #7c4dff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Light mode styles for footer */
+body.light .footer {
+  border-top-color: #ab47bc;
+}
+
+body.light .footer p,
+body.light .footer a {
+  color: #5e35b1;
+}
+
+body.light .footer a:hover {
+  color: #ab47bc;
+}
+
+/* Add your custom styles here! */

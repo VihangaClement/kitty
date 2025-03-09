@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character encoding for proper text display -->
+  <meta charset="UTF-8">
+  <!-- Ensures responsive design on all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title -->
+  <title>Kitty - Web Development</title>
+  <!-- Links to the CSS file -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!--Navigation & Main wrapper for the welcome page-->
+  <div class="welcome-wrapper">
+    <div class="header">
+      <div class="logo">🐱</div>
+      <h1>Welcome to Kitty!</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Get Started section -->
+    <div class="get-started">
+      <div class="rocket-icon">🚀</div>
+      <h2>Get Started!</h2>
+      <p class="tip">To start Local Server <code>npm start</code>.</p>
+      <p>Go to the src folder and customize index.html.</p>
+      <p class="tip">Customize this in <code>style.css</code> and <code>script.js</code>.</p>
+      <p class="tip">To Build Project <code>npm run build</code>.</p>
+      <p class="tip">To Run Builded Project <code>npm run preview</code>.</p>
+      <button id="startButton">Begin Editing</button>
+
+   <!-- Toggle button for light/dark mode and Center Tag-->
+      <center>
+        <div class="mode-toggle">
+          <button id="modeToggleButton">
+            <span class="icon">🌙</span>
+            <span class="text">Dark Mode</span>
+          </button>
+        </div>
+      </center>
+    </div>
+
+    <!-- Resource cards section -->
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📚</div>
+        <h3>Tutorials</h3>
+        <p>Learn the basics of HTML, CSS, and JavaScript with guided lessons.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h3>Examples</h3>
+        <p>Explore sample projects to inspire your web development journey.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📖</div>
+        <h3>Documentation</h3>
+        <p>Deepen your skills with detailed guides and references.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 CodeArbeit Developer Vihanga Clement</p>
+    <a href="https://github.com/yourusername/kitty" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </footer>
+  <!-- Links to the JS file -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>

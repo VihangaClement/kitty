@@ -1,0 +1,36 @@
+{
+  "name": "kitty",
+  "version": "1.0.0",
+  "description": "A lightweight starter kit for learning HTML, CSS, and JavaScript with a modern design.",
+  "main": "index.js",
+  "bin": {
+    "kitty": "./bin/kitty.js"
+  },
+  "scripts": {
+    "start": "parcel src/*.html --port 2010",
+    "build": "parcel build src/*.html",
+    "preview": "http-server dist -p 2010"
+  },
+  "keywords": [
+    "starter-kit",
+    "html",
+    "css",
+    "javascript",
+    "framework"
+  ],
+  "author": "CodeArbeit Developer Vihanga Clement",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vihangaclement/kitty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vihangaclement/kitty/issues"
+  },
+  "homepage": "https://github.com/vihangaclement/kitty",
+  "devDependencies": {
+    "fs-extra": "^11.0.0",
+    "parcel": "^2.13.3",
+    "yargs": "^17.0.0"
+  }
+}
